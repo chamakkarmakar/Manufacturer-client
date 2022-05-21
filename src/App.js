@@ -1,8 +1,12 @@
 import './App.css';
+import Footer from './Pages/SharedItem/Footer';
+import Header from './Pages/SharedItem/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Header></Header>
+      <Footer></Footer>
       
     </div>
   );
