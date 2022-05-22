@@ -15,7 +15,7 @@ const Products = () => {
 
     return (
         <div className='container mx-auto my-7'>
-            <h1 className='text-2xl text-center font-semibold'>Products: {products.length}</h1>
+            <h1 className='text-2xl text-center font-semibold mb-7'>Products: {products.length}</h1>
             <div className='grid grid-cols-3 gap-5'>
                 {
                     products.map(product => <Product
