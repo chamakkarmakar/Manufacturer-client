@@ -1,0 +1,29 @@
+[
+    {
+        "_id" : 1,
+        "parts" : "car wheel",
+        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
+        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
+        "minQty" : 50,
+        "qty" : 150,
+        "price" : 1000
+    },
+    {
+        "_id" : 2,
+        "parts" : "car wheel",
+        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
+        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
+        "minQty" : 50,
+        "qty" : 150,
+        "price" : 1000
+    },
+    {
+        "_id" : 3,
+        "parts" : "car wheel",
+        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
+        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
+        "minQty" : 50,
+        "qty" : 150,
+        "price" : 1000
+    }
+]
