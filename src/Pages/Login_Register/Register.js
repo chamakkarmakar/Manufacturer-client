@@ -1,13 +1,18 @@
 import React, { useRef } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../SharedItem/Loading';
+import SocialLogin from './SocialLogin';
 
 const Register = () => {
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/"; 
 
     const [
         createUserWithEmailAndPassword,
@@ -17,7 +22,7 @@ const Register = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
 
     if (user) {
-        console.log(user);
+        navigate(from, { replace: true });
     }
 
 
@@ -64,9 +69,7 @@ const Register = () => {
                     </div>
                 </div>
                 <div className="divider lg:divider-horizontal">OR</div>
-                <div className="lg:w-1/2 w-full bg-base-300 flex justify-center items-center">
-                    <button className='px-5 py-3 btn btn-primary text-white font-bold rounded-2xl'>Login with Google+</button>
-                </div>
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );

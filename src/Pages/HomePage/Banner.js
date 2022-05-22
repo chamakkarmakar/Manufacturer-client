@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen" style={{background: "url('https://di-uploads-pod10.dealerinspire.com/acuranorthscottsdale/uploads/2017/03/Parts-Banner-3.jpg')", backgroundSize: 'cover'}}>
+        <div className="hero min-h-screen " style={{background: "url('https://di-uploads-pod10.dealerinspire.com/acuranorthscottsdale/uploads/2017/03/Parts-Banner-3.jpg')", backgroundSize: 'cover'}}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">

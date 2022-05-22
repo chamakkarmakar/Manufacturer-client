@@ -1,12 +1,18 @@
 import React, { useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../SharedItem/Loading';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/"; 
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -15,22 +21,16 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    
         if (user) {
-            console.log(user);
+            navigate(from, { replace: true });
         }
-    
 
     if (loading) {
         return <Loading></Loading>;
     }
 
     if (error) {
-        return (
-            <div>
-                <p>Error: {error.message}</p>
-            </div>
-        );
+        errorElement = <p className='text-red-900 font-bold text-center'>invalid email/password</p>
     }
 
     const handleSignIn = event => {
@@ -47,6 +47,7 @@ const Login = () => {
                 <div className="card flex-shrink-0 lg:w-1/2 w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
                         <h1 className="text-3xl font-bold text-center">Sign in now!</h1>
+                        {errorElement}
                         <form onSubmit={handleSignIn}>
                             <input type="email" ref={emailRef} placeholder="@email.com" name='email'  className="input input-bordered mt-5 outline-none w-full" />
 
@@ -61,12 +62,11 @@ const Login = () => {
                             </div>
                             <p className='mt-3 font-bold'>New to this site? <Link to='/register' className='text-blue-500 cursor-pointer'>Create a New Account </Link> </p>
                         </form>
+                        
                     </div>
                 </div>
                 <div className="divider lg:divider-horizontal">OR</div>
-                <div className="lg:w-1/2 w-full bg-base-300 flex justify-center items-center">
-                    <button className='px-5 py-3 btn btn-primary text-white font-bold rounded-2xl'>Login with Google+</button>
-                </div>
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('fakedb_parts.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -16,7 +16,7 @@ const Products = () => {
     return (
         <div className='container mx-auto my-7'>
             <h1 className='text-2xl text-center font-semibold mb-7'>Products: {products.length}</h1>
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
                 {
                     products.map(product => <Product
                         key={product._id}
