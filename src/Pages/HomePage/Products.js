@@ -5,7 +5,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('fakedb.json')
+        fetch('fakedb_parts.json')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

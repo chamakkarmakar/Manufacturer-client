@@ -1,0 +1,23 @@
+[
+    {
+        "_id" : 1,
+        "user" : "Tom Jerry",
+        "img" : "https://www.w3schools.com/howto/img_avatar.png",
+        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
+        "ratings" : 5
+    },
+    {
+        "_id" : 2,
+        "user" : "Tom Jerry",
+        "img" : "https://www.w3schools.com/howto/img_avatar.png",
+        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
+        "ratings" : 5
+    },
+    {
+        "_id" : 3,
+        "user" : "Tom Jerry",
+        "img" : "https://www.w3schools.com/howto/img_avatar.png",
+        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
+        "ratings" : 5
+    }
+]

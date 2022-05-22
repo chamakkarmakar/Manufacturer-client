@@ -5,10 +5,11 @@ const Header = () => {
     const menuItems =
     <>
       <li><Link to='/home'>Home</Link></li>
-      <li><Link to='/'>About</Link></li>
-      <li><Link to='/'>Parts</Link></li>
-      <li><Link to='/'>Business Summary</Link></li>
-      <li><Link to='/'>Reviews</Link></li>
+      <li><Link to='/about'>About</Link></li>
+      <li><Link to='/products'>Products</Link></li>
+      <li><Link to='/summary'>Business Summary</Link></li>
+      <li><Link to='/reviews'>Reviews</Link></li>
+      <li><Link to='/login'>Sign in</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 sticky top-0">
