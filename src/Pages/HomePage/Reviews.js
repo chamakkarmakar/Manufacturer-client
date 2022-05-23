@@ -13,7 +13,7 @@ const Reviews = () => {
         })
     },[])
     return (
-        <div>
+        <div className='container mx-auto lg:w-full w-4/5'>
             <h2 className='text-2xl font-semibold text-center mb-7'>Reviews : {reviews.length}</h2>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
                 {
