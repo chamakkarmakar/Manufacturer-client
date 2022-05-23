@@ -5,7 +5,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('fakedb_reviews.json')
+        fetch('http://localhost:5000/review')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -13,8 +13,8 @@ const Reviews = () => {
         })
     },[])
     return (
-        <div className='container mx-auto lg:w-full w-4/5'>
-            <h2 className='text-2xl font-semibold text-center mb-7'>Reviews : {reviews.length}</h2>
+        <div className='container mx-auto lg:w-full w-4/5 my-12'>
+            <h2 className='text-2xl font-semibold text-center mb-7'>Reviews</h2>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
                 {
                     reviews.map(review => <Review

@@ -19,7 +19,7 @@ const ProductDetail = () => {
             phone: event.target.phone.value
         }
         console.log(order);
-        const url=`http://localhost:5000/order`
+        const url=`https://nameless-ocean-99245.herokuapp.com/order`
         fetch(url,{
             method: 'POST',
             headers:{
