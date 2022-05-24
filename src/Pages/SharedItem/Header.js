@@ -10,6 +10,7 @@ const Header = () => {
   if (loading) {
     return <Loading></Loading>;
   }
+  // console.log(user);
   const menuItems =
     <>
       <li><Link to='/home'>Home</Link></li>
@@ -19,7 +20,10 @@ const Header = () => {
       <li><Link to='/blog'>Blog</Link></li>
       <li><Link to='/portfolio'>My PortFolio</Link></li>
       {
-        user && <li><Link to='/dashboard'>Dashboard</Link></li>
+        user && <>
+          <li><Link to='/dashboard'>Dashboard</Link></li>
+          <li><Link to='/profile'>{user.displayName}</Link></li>
+        </>
       }
       <li>{user ? <button onClick={() => handleLogOut()} className="btn btn-ghost">Sign out</button> : <Link to='/login'>Sign in</Link>}</li>
     </>

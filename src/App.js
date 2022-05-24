@@ -40,9 +40,9 @@ function App() {
             <Dashboard />
           </RequireAuth>
         }>
-          <Route index element={<MyProfile />}></Route>
+          <Route index element={<MyOrder />}></Route>
           <Route path="addreview" element={<AddReview />}></Route>
-          <Route path="order" element={<MyOrder />}></Route>
+          <Route path="myprofile" element={<MyProfile />}></Route>
           <Route path="users" element={<AllUsers />}></Route>
         </Route>
         <Route path='/register' element={<Register />}></Route>
