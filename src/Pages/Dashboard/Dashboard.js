@@ -8,7 +8,7 @@ const Dashboard = () => {
                 <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                 <h2 className='text-2xl font-bold text-purple-500'>Dashboard</h2>
-                {/* <label htmlFor="dashboard-sidebar" class="btn btn-primary drawer-button lg:hidden">Open drawer</label> */}
+                {/* <label htmlFor="dashboard-sidebar" className="btn btn-primary drawer-button lg:hidden">Open drawer</label> */}
                     <Outlet />
                 </div>
                 <div className="drawer-side">
