@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../SharedItem/Loading';
 import SocialLogin from './SocialLogin';
 
@@ -20,12 +21,12 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    const [token] = useToken(user);
     useEffect(() => {
-        if (user) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    },[navigate,from,user])
+    },[navigate,from,token])
 
     if (loading) {
         return <Loading></Loading>;

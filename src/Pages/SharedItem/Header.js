@@ -29,6 +29,7 @@ const Header = () => {
     </>
   const handleLogOut = () => {
     signOut(auth);
+    localStorage.removeItem('userToken');
   }
   return (
     <div className="navbar bg-base-100 sticky top-0">
