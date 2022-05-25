@@ -18,7 +18,7 @@ const MyProfile = () => {
             linkedin: e.target.linkedin.value
         }
         console.log(updateProfile);
-        fetch(`http://localhost:5000/user/${user?.email}`,{
+        fetch(`https://nameless-ocean-99245.herokuapp.com/user/${user?.email}`,{
             method: 'PUT',
             headers:{
                 'content-type':'application/json'

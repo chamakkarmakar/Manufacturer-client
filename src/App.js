@@ -5,6 +5,7 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import AddReview from './Pages/Dashboard/AddReview';
 import AllUsers from './Pages/Dashboard/AllUsers';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProduct from './Pages/Dashboard/ManageProduct';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyProfile from './Pages/Dashboard/MyProfile';
@@ -49,6 +50,7 @@ function App() {
           <Route path="users" element={<RequireAdmin><AllUsers /></RequireAdmin>}></Route>
           <Route path="addProduct" element={<RequireAdmin><AddProduct /></RequireAdmin>}></Route>
           <Route path="manageProduct" element={<RequireAdmin><ManageProduct /></RequireAdmin>}></Route>
+          <Route path="manageOrders" element={<RequireAdmin><ManageOrders /></RequireAdmin>}></Route>
         </Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='*' element={<NotFound />}></Route>
