@@ -1,30 +1,30 @@
 [
     {
         "_id" : 1,
-        "parts" : "car wheel",
-        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
-        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
-        "minQty" : 50,
-        "qty" : 150,
-        "price" : 1000
+        "parts": "Front Bumper Cover, Primed, CAPA CERTIFIED",
+        "img" : "https://res.cloudinary.com/us-auto-parts-network-inc/image/upload/d_noimage.jpg/b_rgb:FFFFFF,c_pad,dpr_auto,f_auto,h_1200,q_auto,w_1200/v1/images/repf010308pq_1",
+        "description" : "Manufactured from top quality components, this is your best option and inexpensive replacement for your rebuild, repair, and maintenance needs - an OE replacement product for your damaged or aged factory part.",
+        "minQty" : 10,
+        "qty" : 550,
+        "price" : 375
     },
     {
         "_id" : 2,
-        "parts" : "car wheel",
-        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
-        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
-        "minQty" : 50,
-        "qty" : 150,
-        "price" : 1000
+        "parts" : "Driver and Passenger Side Heated Mirror Glass",
+        "img" : "https://res.cloudinary.com/us-auto-parts-network-inc/image/upload/d_noimage.jpg/b_rgb:FFFFFF,c_pad,dpr_auto,f_auto,h_1200,q_auto,w_1200/v1/images/set-dg119gr_1",
+        "description" : "Kool Vue mirror glass inserts provide an unobstructed view of the road around you. With available features such as heating, blind spot detection, and signal lights (depending on application), each insert is designed to be a direct replacement for the glass that fits in your vehicle’s factory mirror. Fit and finish are impeccable, resulting in a product that delivers reliable performance year after year.",
+        "minQty" : 15,
+        "qty" : 100,
+        "price" : 200
     },
     {
         "_id" : 3,
-        "parts" : "car wheel",
-        "img" : "https://media.istockphoto.com/photos/car-tire-close-up-on-asphalt-road-at-sunset-picture-id1325611840?b=1&k=20&m=1325611840&s=170667a&w=0&h=UXzZDgjRZeyHfr6Lp3ZqN8BRKCqQksekvDU2mlNVWPY=",
-        "description" : "a construction of hard rubber that fits on a wheel and covers a pocket of air to provide a partial cushion for shocks, plus some level of adhesion to the road surface",
-        "minQty" : 50,
-        "qty" : 150,
-        "price" : 1000
+        "parts" : "LED Offroad Light - Black, Direct Fit, Kit",
+        "img" : "https://res.cloudinary.com/us-auto-parts-network-inc/image/upload/d_noimage.jpg/b_rgb:FFFFFF,c_pad,dpr_auto,f_auto,h_1200,q_auto,w_1200/v1/images/bdi448031_1",
+        "description" : ": Perfect for all of your adventures, the Baja Designs LED offroad light lets you drive with confidence and safety as it utilizes premium quality materials to serve you for the years to come. It gives you high-performing lighting that guarantees your driving satisfaction. It also offers a sleek and classy look to make your vehicle more stylish.",
+        "minQty" : 5,
+        "qty" : 50,
+        "price" : 1020
     }
 ]
 

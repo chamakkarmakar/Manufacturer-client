@@ -3,7 +3,7 @@ import React from 'react';
 const Users = ({ user,index,refetch }) => {
     const { email ,role} = user;
     const handleAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://nameless-ocean-99245.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('userToken')}`

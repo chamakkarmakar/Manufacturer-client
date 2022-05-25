@@ -33,7 +33,7 @@ const AddProduct = () => {
                         img: img
                     }
                     // post data 
-                    fetch('http://localhost:5000/product', {
+                    fetch('https://nameless-ocean-99245.herokuapp.com/product', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -56,9 +56,9 @@ const AddProduct = () => {
     }
     
     return (
-        <div className='my-12'>
+        <div className='container mx-auto lg:w-1/2 my-12'>
             <h2 className="text-2xl">Add a New Product</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className='py-5 shadow-2xl flex flex-col justify-center items-center'>
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">

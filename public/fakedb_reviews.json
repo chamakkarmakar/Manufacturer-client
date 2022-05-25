@@ -1,23 +1,30 @@
 [
     {
         "_id" : 1,
-        "user" : "Tom Jerry",
+        "user" : "Sharif",
         "img" : "https://www.w3schools.com/howto/img_avatar.png",
-        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
-        "ratings" : 5
+        "userReview": "Yes I would recommend all to everyone I am super happy. will tell anyone else the same thing God Bless Thank you.",
+        "ratings" : "5"
     },
     {
         "_id" : 2,
-        "user" : "Tom Jerry",
+        "user" : "Jamal",
         "img" : "https://www.w3schools.com/howto/img_avatar.png",
-        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
-        "ratings" : 5
+        "userReview" : "I ordered 2 headlights for a truck I am fixing and car parts had the best pricing.",
+        "ratings" : 4.5
     },
     {
         "_id" : 3,
-        "user" : "Tom Jerry",
+        "user" : "Rahman",
         "img" : "https://www.w3schools.com/howto/img_avatar.png",
-        "userReview" : "Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation. Lorem ipsum is derived from the Latin dolorem ipsum roughly translated as pain itself.",
+        "userReview" : "It was really Quick, they had choices, and guaranteed fits. Good prices Too!",
         "ratings" : 5
+    },
+    {
+        "_id" : 4,
+        "user" : "Ahmed Razz",
+        "img" : "https://www.w3schools.com/howto/img_avatar.png",
+        "userReview": "Parts were on time and in better condition then I thought.",
+        "ratings": "4.8"
     }
 ]

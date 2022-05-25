@@ -19,6 +19,7 @@ const Dashboard = () => {
                 <div className="drawer-side">
                     <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
                     <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
+                    <li><Link to='/dashboard'>My Profile</Link></li>
 
                         {admin ?
                             <>
@@ -27,11 +28,10 @@ const Dashboard = () => {
                                 <li><Link to="/dashboard/manageProduct">Manage Products</Link></li>
                             </> :
                             <>
-                                <li><Link to='/dashboard'>My Order</Link></li>
+                                <li><Link to='/dashboard/myorder'>My Order</Link></li>
                                 <li><Link to='/dashboard/addreview'>Add Review</Link></li>
                             </>
                         }
-                                <li><Link to='/dashboard/myprofile'>My Profile</Link></li>
 
                     </ul>
                 </div>

@@ -30,7 +30,7 @@ const AddReview = () => {
             })
     }
     return (
-        <div className='container mx-auto lg:w-1/2'>
+        <div className='container mx-auto lg:w-1/2 my-12'>
 
             <form onSubmit={handleSubmit(onSubmit)} className='py-5 shadow-2xl flex flex-col justify-center items-center'>
                 <h2 className="text-2xl font-semibold">Add Review</h2>
