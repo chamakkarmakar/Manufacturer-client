@@ -11,7 +11,7 @@ const MyOrder = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://nameless-ocean-99245.herokuapp.com/order?email=${user.email}`,{
+            fetch(`http://localhost:5000/order?email=${user.email}`,{
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('userToken')}`
@@ -54,6 +54,7 @@ const MyOrder = () => {
                                 <td>{order.product}</td>
                                 <td>{order.phone}</td>
                                 <td>{order.address}</td>
+                                <td><button className="btn">Delete</button></td>
                             </tr>
                         )}
                 </tbody>

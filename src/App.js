@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './Pages/Blog/Blog';
+import AddProduct from './Pages/Dashboard/AddProduct';
 import AddReview from './Pages/Dashboard/AddReview';
 import AllUsers from './Pages/Dashboard/AllUsers';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import ManageProduct from './Pages/Dashboard/ManageProduct';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import Home from './Pages/HomePage/Home';
@@ -11,6 +13,7 @@ import Products from './Pages/HomePage/Products';
 import Reviews from './Pages/HomePage/Reviews';
 import Login from './Pages/Login_Register/Login';
 import Register from './Pages/Login_Register/Register';
+import RequireAdmin from './Pages/Login_Register/RequireAdmin';
 import RequireAuth from './Pages/Login_Register/RequireAuth';
 import ProductDetail from './Pages/ManageProduct/ProductDetail';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
@@ -43,7 +46,9 @@ function App() {
           <Route index element={<MyOrder />}></Route>
           <Route path="addreview" element={<AddReview />}></Route>
           <Route path="myprofile" element={<MyProfile />}></Route>
-          <Route path="users" element={<AllUsers />}></Route>
+          <Route path="users" element={<RequireAdmin><AllUsers /></RequireAdmin>}></Route>
+          <Route path="addProduct" element={<RequireAdmin><AddProduct /></RequireAdmin>}></Route>
+          <Route path="manageProduct" element={<RequireAdmin><ManageProduct /></RequireAdmin>}></Route>
         </Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='*' element={<NotFound />}></Route>

@@ -21,7 +21,9 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+
     const [token] = useToken(user);
+    
     useEffect(() => {
         if (token) {
             navigate(from, { replace: true });
