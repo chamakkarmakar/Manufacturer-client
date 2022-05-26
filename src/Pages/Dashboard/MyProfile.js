@@ -1,7 +1,9 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../SharedItem/Loading';
+
 
 const MyProfile = () => {
     const [user, loading] = useAuthState(auth);
@@ -26,8 +28,11 @@ const MyProfile = () => {
             body:JSON.stringify(updateProfile)
         })
         .then(res=>res.json())
-        .then(data=>{
-            console.log(data);
+            .then(data => {
+                if (data.modifiedCount) {
+                toast("Your Information successfully Updated")
+            }
+            // console.log(data);
         })
         e.target.reset();
     }
@@ -47,7 +52,7 @@ const MyProfile = () => {
                 </div>
 
                 <div className='flex flex-col md:flex-row justify-between items-center mt-5'>
-                    <label htmlFor="address" className='text-lg '>Address : </label>
+                    <label htmlFor="address" className='text-lg '>Location : </label>
                     <textarea className="border rounded h-20 w-9/12 px-4 focus:outline-none" type="text" name="address" />
                 </div>
 

@@ -1,3 +1,46 @@
+# Website Name
+
+### Automoto parts!
+
+## Description
+
+An website for manufacturers that helps that automobile enthusiasts to purchase their desire car parts. In this Project, The Admin can create, edit and delete the products, manage users, orders etc. Users can log in to their account, choose the desire product and pay online with their credit card. The workflow of this system is efficient and easy to understand.
+
+## 🌐 Website Link
+
+[AutoMoto Parts](https://manufacturer-site.web.app/)
+
+
+## 🚀 Features
+
+- NodeJS & ExpressJS in Server-Side
+- ReactJS in FrontEnd
+- MongoDB For Database
+- Tailwind CSS for designing and making the system Responsive
+- API
+- CRUD(Create, Read, Update, Delete) Operation for Products
+- Authentication using Firebase and JWT to maximize the security
+- Online Payment using Stripe
+- Reset Password
+- Menu Based on Login Status
+- Client-end Hosted on Firebase and Server Hosted on Heroku
+
+## 🚀 Functionalities
+    - Managing Products from Creation - Deletion
+    - Real-Time update on Database
+    - Non logged in users only have the privilege to check the product
+    - Min and Max Quantity based product purchase
+    - Seperate dashboard For Admin and Users
+    - Admin have the Previlege to Grant the Admin Role to any users
+    - Admin can update the status of an order
+    - User also can signup and Login using their Google Account.
+    - JWT token get stored so that user don't need to log in each time to access the protected route
+    - Multiple Form types included
+    - User can pay the amount from their Dashboard using Stripe gateway. 
+
+- ### Server Side
+    - Logger displays all sort of Error log
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
