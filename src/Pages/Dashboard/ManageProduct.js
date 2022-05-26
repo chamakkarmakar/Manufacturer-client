@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useProduct from '../../hooks/useProduct';
 
 const ManageProduct = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('https://nameless-ocean-99245.herokuapp.com/product')
-            .then(res => res.json())
-            .then(data => {
-                // console.log(data);
-                setProducts(data);
-            })
-    }, [])
+    const [products, setProducts] = useProduct();
 
     const handleProductDelete = id => {
         const proceed = window.confirm('Are you sure to delete?');

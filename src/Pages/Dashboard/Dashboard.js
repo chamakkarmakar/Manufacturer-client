@@ -31,6 +31,7 @@ const Dashboard = () => {
                             <>
                                 <li><Link to='/dashboard/myorder'>My Order</Link></li>
                                 <li><Link to='/dashboard/addreview'>Add Review</Link></li>
+                                <li><Link to='/dashboard/payment'>Payment</Link></li>
                             </>
                         }
 

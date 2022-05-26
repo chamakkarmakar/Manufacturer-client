@@ -43,7 +43,8 @@ const Register = () => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        updateProfile({ displayName: name });
+        updateProfile(auth.currentUser,
+            { displayName: name });
         console.log(name,password,email)
         createUserWithEmailAndPassword(email,password);
 

@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useProduct from '../../hooks/useProduct';
 import Product from './Product';
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('https://nameless-ocean-99245.herokuapp.com/product')
-            .then(res => res.json())
-            .then(data => {
-                // console.log(data);
-                setProducts(data);
-            })
-    }, [])
+    const [products] = useProduct();
 
     return (
         <div className='container mx-auto my-7 md:w-full'>
