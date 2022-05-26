@@ -1,4 +1,3 @@
-import { PaperAirplaneIcon, SpeakerphoneIcon, StarIcon } from '@heroicons/react/solid';
 import React from 'react';
 const BusinessSummary = () => {
     return (
@@ -12,18 +11,16 @@ const BusinessSummary = () => {
                         <div class="flex">
                             <div class="mr-5">
 
-                                <PaperAirplaneIcon className='w-5 h-5'></PaperAirplaneIcon>
+                                
 
                                 <p class="text-3xl font-bold">14k+</p>
                                 <p class="text-sm">Car Parts Delivered.</p>
                             </div>
                             <div class="mr-6">
-                                    <StarIcon className='w-5 h-5'></StarIcon>
                                 <p class="text-3xl font-bold">10/10</p>
                                 <p class="text-sm">Rated by the Customers!</p>
                             </div>
                             <div>
-                                <SpeakerphoneIcon className='w-5 h-5'></SpeakerphoneIcon>
 
                                 <p class="text-3xl font-bold">2+</p>
                                 <p class="text-">Times awarded for Best Car Parts Manufacturer!</p>
